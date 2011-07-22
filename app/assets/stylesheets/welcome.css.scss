@@ -1,0 +1,112 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.welcome {
+	background-color: #F7F7F7;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: 1.2;
+  min-height: 310px;
+	font-size: 62.5%;
+	
+	.main{
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		width: 892px;
+	}
+	
+	.expand_form {
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 5%;
+    width: 500px;
+		
+		h1 {
+			font-size: 4em;
+		  font-weight: normal;
+		  letter-spacing: -1px;
+			
+			img{
+				height: 60px;
+			}
+		}
+		
+		#shortenForm {
+	    height: 4em;
+	    margin: 3em 0 0 0;
+	    border: 1px solid #cccccc;
+	    background-color: #FFF;
+	    text-align: left;
+	    padding: 0;
+		
+			.shorteningInput {
+		    font-size:2em;
+		    width:390px;
+		    height: 30px;
+		    border: 0px solid #fff;
+		    margin: 5px !important;
+			}
+			
+			.shorteningSubmit {
+		    width:70px;
+		    height: 30px;
+				float:right;
+				margin: 5px !important;
+				
+				background: url("/assets/submit_bkgd.png") repeat-x scroll center center transparent;
+		    border: 1px solid #BBBBBB;
+		    cursor: pointer;
+		    font-size: 13px;
+		    margin: 0 20px 0 0;
+		    padding: 5px 10px;
+				
+			}
+			
+		}
+		
+	}
+	
+	.results.error{
+		color: #fff; 
+		background-color: rgb(207,91,49);
+	}
+	.results.loading{
+		border:1px solid #cccccc;
+		background-color:#FFF;
+		height:30px;
+		background: url("/assets/loading.gif") no-repeat scroll center center #FFFFFF;
+	}
+	
+	.results{
+  	width: 600px;
+
+    margin: 0 auto;
+		padding:10px;
+		
+		border:1px solid #cccccc;
+		background-color:#FFF;
+		
+		
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+		display:none;
+		clear:both;
+		
+		ul{
+			list-style: none outside none;
+			li{ float:left; font-size: 1.8em; overflow:hidden}
+			li.expanded_url {
+				width:500px;
+				text-align:left
+			}
+			li.expand_count{
+				padding-top:5px;
+				float:right;
+				font-size: 1.2em;
+			}
+		}
+	}
+	
+	
+}

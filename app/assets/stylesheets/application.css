@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+h1 {font-size:2em; color:#2f2f2f; font-family: 'Lato', Arial, Helvetica, sans-serif; font-weight:bold;}  /* displayed at 24px */
+h2 {font-size:1.5em; color:#2f2f2f;}  /* displayed at 18px */
+h3 {font-size:1.25em;}  /* displayed at 15px */
+h4 {font-size:1em;}  /* displayed at 12px */
+
+input, select, th, td {font-size:1em;}
+
+input {
+    -webkit-appearance: none;
+    background: none;
+}
+
+ul, li {
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a, a:active, a:visited {
+    color: #126cc4;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.inputBorder {
+    border:1px solid #bdbdbd;
+    background-color: #bdbdbd;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
