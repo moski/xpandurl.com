@@ -64,3 +64,43 @@ a:hover {
 .clearfix {
 	display: block;
 }
+
+
+#foot {
+	margin: 0 auto;
+  position: relative;
+  top: 105px;
+  width: 288px;
+}
+
+#footContent {
+  height: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#share {
+    left: 150px;
+    position: fixed;
+    text-align: center;
+		font-weight:bold;
+    width: 60px;
+		top: 7em;
+		color: #9B9B9B;
+		
+		border:1px solid #cccccc;
+		background-color:#FFF;
+		
+		border-radius: 5px;
+    -moz-border-radius: 5px;
+		padding:10px;
+}
+#share {
+	float: right;
+	font-size: 1.8em;	 
+	margin: 0.3em 0 0;
+}
+#plusone-wrapper, #twitter-wrapper {
+   padding-top: 10px;
+}

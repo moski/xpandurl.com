@@ -5,6 +5,7 @@ Xpandurl::Application.routes.draw do
       resources :urls, :only => [] do
         collection do
           get 'expand_url'
+          get 'docs'
         end
       end
     end

@@ -21,6 +21,8 @@ jQuery ->
 			alert('Please enter a valid url');
 			return false
 		
+		$('.results').html("").addClass("loading").show()
+		
 		data = form.serialize()
 		
 		$.getJSON(api_url, data, (data) -> 
@@ -37,6 +39,5 @@ jQuery ->
 				$('.results').removeClass("loading").removeClass("error").addClass("success").html(html).show()
 		)
 		
-		$('.results').html("").addClass("loading")
 		
 		return false

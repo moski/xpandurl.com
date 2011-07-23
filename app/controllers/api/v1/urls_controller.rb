@@ -1,5 +1,5 @@
 class Api::V1::UrlsController < ApplicationController
-  respond_to :json, :xml
+  respond_to :json, :xml, :except => [:docs]
   
   def expand_url
     @url = find_url
@@ -7,6 +7,12 @@ class Api::V1::UrlsController < ApplicationController
     
     rescue UrlExpander::Error, ArgumentError => e
       render_content(e)
+  end
+  
+  
+  
+  def docs
+    
   end
   
   private

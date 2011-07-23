@@ -1,8 +1,7 @@
 <div class="main">
-	
 	<div class="expand_form">
 		<h1 id="mainTitle">
-			<img src="/assets/logo.png" />
+			<%= link_to image_tag("http://xpandurl.com/assets/logo.png"), "/" %>
 		</h1>
 		<form id="shortenForm" class="inputBorder" action="<%= expand_url_api_v1_urls_path %>" method="get">
 			<input class="shorteningInput" type="text" value="" name="short_url">
@@ -11,7 +10,5 @@
 	</div>
 	
 	<div class="results clearfix">
-		
-	</div>
-	
+	</div>	
 </div>
